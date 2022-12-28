@@ -1,3 +1,4 @@
-.invisible {
-    display: none;
+.warning {
+    background-color: red;
+    padding: 10px;
 }

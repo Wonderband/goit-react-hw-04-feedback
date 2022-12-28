@@ -1,3 +1,10 @@
-.invisible {
-    display: none;
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: left;
+}
+
+p {
+    margin: 0;
 }

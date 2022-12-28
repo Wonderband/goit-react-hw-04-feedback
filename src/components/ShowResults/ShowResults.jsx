@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import css from './ShowResults.module.css';
 import { Notification } from 'components/Notification/Notification';
 
 export const ShowResults = ({ state: { good, neutral, bad } }) => {
@@ -10,7 +10,7 @@ export const ShowResults = ({ state: { good, neutral, bad } }) => {
   return (
     <>
       {!noStatistics(good, neutral, bad) && (
-        <div>
+        <div className={css.stats}>
           <p>Good: {good}</p>
           <p>Neutral: {neutral}</p>
           <p>Bad: {bad}</p>

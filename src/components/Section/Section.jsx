@@ -1,17 +1,9 @@
 import PropTypes from 'prop-types';
+import css from './Section.module.css';
 
 export const Section = ({ title, children }) => {
   return (
-    <section
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 30,
-        color: '#010101',
-      }}
-    >
+    <section className={css.section}>
       <h3>{title}</h3>
       {children}
     </section>

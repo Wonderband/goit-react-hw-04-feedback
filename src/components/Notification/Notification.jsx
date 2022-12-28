@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-// import styles from './Notification.module.css';
+import css from './Notification.module.css';
 export const Notification = ({ showMessage, message }) =>
-  showMessage && <p>{message}</p>;
+  showMessage && <p className={css.warning}>{message}</p>;
 
 Notification.propTypes = {
   showMessage: PropTypes.bool.isRequired,
